@@ -1,0 +1,9 @@
+{
+  "id": "amazon",
+  "version": "1.0.0",
+  "vendor": "mallexxx",
+  "type": "web",
+  "main": "index.html",
+  "title": "Amazon Launcher",
+  "icon": "icon.png"
+}

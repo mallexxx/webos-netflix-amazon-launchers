@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function launchApp() {
+        var request = new PalmServiceBridge();
+        var uri = "palm://com.palm.applicationManager/launch";
+        var params = JSON.stringify({
+          "id": "com.685631.3411"  // Kinopoisk
+        });
+
+        request.onservicecallback = function (response) {
+          var responseObj = JSON.parse(response);
+          if (responseObj.returnValue === true) {
+            console.log("App launched successfully");
+          } else {
+            console.log("Failed to launch app");
+          }
+        };
+
+        request.call(uri, params);
+      }
+    </script>
+  </head>
+  <body onload="launchApp();">
+  </body>
+</html>

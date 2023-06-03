@@ -1,0 +1,9 @@
+{
+  "id": "netflix",
+  "version": "1.0.0",
+  "vendor": "mallexxx",
+  "type": "web",
+  "main": "index.html",
+  "title": "Netflix Launcher",
+  "icon": "icon.png"
+}
